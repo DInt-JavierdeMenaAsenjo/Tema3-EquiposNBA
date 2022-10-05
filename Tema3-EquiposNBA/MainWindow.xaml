@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_EquiposNBA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Icon="assets/nba.ico"
+        Title="MainWindow" Height="540" Width="1000" MinWidth="300">
+    <StackPanel Margin="0,0,2,3">
+        <Border Margin="10px" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+            <StackPanel Height="216" >
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE6D253" Offset="0.941"/>
+                        <GradientStop Color="#FF9262F9"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="30">Los Ángeles Lakers</Label>
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="assets/lakers/9_lakers.png" Width="180"></Image>
+                    <Image Source="assets/lakers/14_lakers.png" Width="180"></Image>
+                    <Image Source="assets/lakers/23_lakers.png" Width="180"></Image>
+                    <Image Source="assets/lakers/3_lakers.png" Width="180"></Image>
+                    <Image Source="assets/lakers/39_lakers.png" Width="180"></Image>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <Border Margin="10px" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+            <StackPanel Height="240">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0.088"/>
+                        <GradientStop Color="#FFB60000" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Label HorizontalAlignment="Center" FontWeight="Bold" FontSize="30" Foreground="White">Miami Heat</Label>
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="assets/heat/7_heat.png" Width="180"/>
+                    <Image Source="assets/heat/14_heat.png" Width="180"/>
+                    <Image Source="assets/heat/22_heat.png" Width="180"/>
+                    <Image Source="assets/heat/99_heat.png" Width="180"/>
+                    <Image Source="assets/heat/13_heat.png" Width="180"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+    </StackPanel>
 </Window>
